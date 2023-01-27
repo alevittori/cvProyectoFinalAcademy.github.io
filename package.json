@@ -1,0 +1,11 @@
+{
+  "name": "trabajo-integrador",
+  "version": "1.0.0",
+  "description": "trabajo intefrador del curso inicial de argentina programa 4.0 dictado por Front end Academy - 2022, en donde realizaremos un cv web para integrar lo aprendido en el largo del curso.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vittori Alejandro",
+  "license": "ISC"
+}

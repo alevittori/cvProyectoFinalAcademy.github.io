@@ -1,0 +1,138 @@
+/* fuentes  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap'); /* font-family: 'Inter', sans-serif; */
+
+/* paletas de colores https://mycolor.space/?hex=%230080FF&sub=1 */
+
+/* variables  */
+:root{
+    /* colores */
+    --main-color:#0080FF;
+    --text-color:#434656;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+
+
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    font-family: 'Inter', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    /* margin-left: 5rem;
+    max-height: 25vh; */
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* 
+    border-radius: 50%;
+    border: 0.1rem solid black; */
+}
+.foto-perfil{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+
+}
+
+.nombre-container{
+    margin-left: 5rem;
+}
+.titulo--nombre{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+.profecion{
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 3rem;
+}
+.datos-personales{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.sub-title{
+     margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+.datos-personales p{
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.contact-mail , .contact-tel{
+    color: var(--main-color);
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+
+    text-decoration: none;
+}
+.contact-mail:hover , .contact-tel:hover{
+    font-weight: bold;
+}
+
+.experiencia-laboral{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.estudios{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card-title{
+    font-size: 1.6rem;
+    
+}
+.puesto-container , .lugar-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
+.card-experiencia p , .card-estudio p{
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+}
